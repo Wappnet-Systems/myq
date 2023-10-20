@@ -1,7 +1,7 @@
 {
   "name": "@wappnet-systems/myq",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "displayName": "myQ API",
   "description": "A nearly complete and modern implementation of the Liftmaster / Chamberlain myQ API.",
   "author": {
