@@ -192,13 +192,6 @@ export class myQApi {
       return null;
     }
 
-    // If we don't have the full set of cookies we expect, something is wrong.
-    if(!response.headers.raw()["set-cookie"] || response.headers.raw()["set-cookie"].length < 3) {
-
-      this.log.error("myQ API login anomaly detected.");
-      return null;
-    }
-
     // Create a new URL based on the redirect.
     const redirectUrl = new URL(response.headers.get("location") as string, response.url);
 
